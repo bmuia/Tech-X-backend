@@ -1,4 +1,4 @@
-# Tech Project
+# Tech X
 
 This is a Django-based project that provides user authentication and newsletter subscription functionality. It uses Django REST Framework (DRF) for building APIs and Simple JWT for token-based authentication.
 
@@ -22,7 +22,7 @@ This is a Django-based project that provides user authentication and newsletter 
 Before running the project, ensure you have the following installed:
 
 - Python 3.12.1
-- PostgreSQL > 14.13
+- PostgreSQL >= 14.13
 - `pip` (Python package manager)
 
 ---
