@@ -86,7 +86,7 @@ python manage.py runserver
 
 - Register a new user:
 
-  - URL: /api/auth/register/
+  - URL: http://localhost:8000/api/auth/register/
 
   - Method: POST
 
@@ -111,7 +111,7 @@ python manage.py runserver
 ```
 - Login:
 
-  - URL: /api/auth/token/login/
+  - URL: http://localhost:8000/api/auth/token/login/
 
   - Method: POST
 
@@ -135,7 +135,7 @@ python manage.py runserver
 
 - Refresh Token:
 
-  - URL: /api/auth/token/login/refresh/
+  - URL: http://localhost:8000/api/auth/token/login/refresh/
 
   - Method: POST
 
@@ -159,7 +159,7 @@ python manage.py runserver
 ### Newsletter Subscription
 - Subscribe/Unsubscribe:
 
-  - URL: /newsletter/subscribe/
+  - URL: http://localhost:8000/newsletter/subscribe/
 
   - Method: POST
 
@@ -186,7 +186,7 @@ Authorization: Bearer <access_token>
 ```
 - Check Subscription Status:
 
-  - URL: /newsletter/subscribe/
+  - URL: http://localhost:8000/newsletter/subscribe/
 
   - Method: GET
 
