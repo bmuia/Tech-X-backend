@@ -80,6 +80,144 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+# API Endpoints
+
+## Authentication
+
+- Register a new user:
+
+  - URL: /api/auth/register/
+
+  - Method: POST
+
+  - Body:
+
+```json
+{
+  "username": "your_username",
+  "email": "your_email@example.com",
+  "password": "your_password"
+}
+
+```
+  - Response:
+```json
+{
+  "username": "your_username",
+  "email": "your_email@example.com",
+  "access": "access_token",
+  "refresh": "refresh_token"
+}
+```
+- Login:
+
+  - URL: /api/auth/token/login/
+
+  - Method: POST
+
+  - Body:
+
+```json
+{
+  "username": "your_username",
+  "password": "your_password"
+}
+```
+
+  - Response:
+
+```json
+{
+  "access": "access_token",
+  "refresh": "refresh_token"
+}
+```
+
+- Refresh Token:
+
+  - URL: /api/auth/token/login/refresh/
+
+  - Method: POST
+
+  - Body:
+
+```json
+{
+  "refresh": "refresh_token"
+}
+```
+
+  - Response:
+
+```json
+
+{
+  "access": "new_access_token"
+}
+```
+
+### Newsletter Subscription
+- Subscribe/Unsubscribe:
+
+  - URL: /newsletter/subscribe/
+
+  - Method: POST
+
+  - Headers:
+
+```plaintext
+Authorization: Bearer <access_token>
+```
+
+  - Body:
+
+```json
+{
+  "subscribed": true  # or false to unsubscribe
+}
+```
+
+  - Response:
+
+```json
+{
+  "message": "Subscription updated successfully."
+}
+```
+- Check Subscription Status:
+
+  - URL: /newsletter/subscribe/
+
+  - Method: GET
+
+  - Headers:
+
+```plaintext
+Authorization: Bearer <access_token>
+```
+  - Response:
+
+```json
+{
+  "subscribed": true  # or false
+}
+```
+
+## Admin Panel
+You can access the Django admin panel at /admin/. Use the superuser credentials you created earlier to log in.
+
+## Contributing
+If you'd like to contribute to this project, please follow these steps:
+   1. Fork the repository.
+
+   2. Create a new branch for your feature or bugfix.
+
+   3. Commit your changes and push to your branch.
+
+   4. Submit a pull request.
+
+## License
+his project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 
 
