@@ -42,5 +42,45 @@ cd Tech
 python3 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set up environment variables
+Create a .env file in the root directory and add the following variables:
+
+```bash
+SECRET_KEY=your_secret_key
+DB_NAME=your_db_name
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+DB_HOST=your_db_host
+DB_PORT=your_db_port
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASSWORD=your_email_password
+```
+
+### 5. Run migrations
+
+```bash
+python manage.py migrate
+```
+
+### 6. Create a superuser
+
+```bash
+python manage.py createsuperuser
+```
+
+### 7. Run the development server
+
+```bash
+python manage.py runserver
+```
+
+
+
 
 
