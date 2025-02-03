@@ -204,7 +204,7 @@ Authorization: Bearer <access_token>
 ```
 
 ## Admin Panel
-You can access the Django admin panel at /admin/. Use the superuser credentials you created earlier to log in.
+You can access the Django admin panel at `/admin/`. Use the superuser credentials you created earlier to log in.
 
 ## Contributing
 If you'd like to contribute to this project, please follow these steps:
