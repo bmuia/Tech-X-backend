@@ -179,7 +179,7 @@ Authorization: Bearer <access_token>
 
   - Response:
 
-```json
+```bash
 {
   "message": "Subscription updated successfully."
 }
