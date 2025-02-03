@@ -39,7 +39,7 @@ cd Tech
 ### 2. Set up a virtual environment
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 ### 3. Install dependencies
