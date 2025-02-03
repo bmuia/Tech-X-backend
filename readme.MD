@@ -171,7 +171,7 @@ Authorization: Bearer <access_token>
 
   - Body:
 
-```json
+```bash
 {
   "subscribed": true  # or false to unsubscribe
 }
@@ -197,7 +197,7 @@ Authorization: Bearer <access_token>
 ```
   - Response:
 
-```json
+```bash
 {
   "subscribed": true  # or false
 }
