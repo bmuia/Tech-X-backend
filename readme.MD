@@ -21,8 +21,8 @@ This is a Django-based project that provides user authentication and newsletter 
 
 Before running the project, ensure you have the following installed:
 
-- Python 3.x
-- PostgreSQL
+- Python 3.12.1
+- PostgreSQL > 14.13
 - `pip` (Python package manager)
 
 ---
@@ -32,7 +32,7 @@ Before running the project, ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:bmuia/Tech-X-backend.git
 cd Tech
 ```
 
